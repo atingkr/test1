@@ -15,4 +15,10 @@ public class RecommendController {
 	public String preferenceTest(){
 		return "Recommend/Preference.wd";
 	}
+	
+	@RequestMapping("/startTest.wd")
+	public String startTest(){
+		return "Recommend/Test";
+	}
+	
 }

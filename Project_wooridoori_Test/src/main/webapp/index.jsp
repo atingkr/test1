@@ -12,5 +12,6 @@
 	</head> 
 	<body>
 		<a href="recommend.wd">Test</a>
+		<h2><a href="startTest.wd">별연습</a></h2>
 	</body>
 </html>

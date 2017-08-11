@@ -1,0 +1,116 @@
+	div{
+		border: 0.5px solid gray;
+	}
+	
+	div>div.aTag_Controller_box{
+		margin-left: 80%;				
+	}
+	span.span_aTag_Controller{
+		cursor: pointer;
+	}
+	
+	div>span>a.filter_aTag{
+		text-decoration: none;
+	}
+	
+	div>ul.filter_item_list_classification{
+		position: absolute;
+		list-style: none;
+		width: 240px;
+		left: 700px;
+		top: 300px;
+		z-index: 7;		
+	}
+	div>ul.filter_item_list_theme{
+		position: absolute;
+		list-style: none;
+		width: 240px;
+		left: 800px;
+		top: 300px;
+		z-index: 7;
+	}
+	
+	div>ul,li.filter_item{		
+		float: left;
+		width: 40%;			
+	}
+	
+	span.onclick_span{
+		cursor: pointer;
+	}
+	
+	div.select_box_div{
+		margin-left: 15%;
+		width: 300px;
+		height: 200px;
+	}
+	
+	div>ul.select_box_ul{
+		list-style: none;
+	}
+	
+	div>ul>li.select_box{
+		border: 0.5px solid red;
+		width: 300px;
+		height: 180px;								
+	}	
+	
+	div.select_tourbox{		
+		padding: 0;
+		z-index: 1;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 100%;			
+	}
+	div>img.select_img{
+		padding: 0;
+		left: 0;
+		top: 0;
+		z-index: 2;
+		width: 100%;
+	}	
+	
+	div.div_hover_box{
+		position: relative;
+		left: 0;
+		top: 0;
+		z-index: 3;
+		width: 300px;
+		height: 180px;	
+	}
+	
+	div.select_blockA{
+		padding: 0;
+		z-index: 4;
+		background: gray;
+		opacity:0.7;
+		width: 300px;
+		height: 90px;	
+	}
+	div.select_blockB{
+		padding: 0;
+		z-index: 5;
+		width: 300px;
+		height: 90px;		
+	}
+	
+	span.first_trip_click{
+		margin-left: 80%;
+		width: 10%;
+		height: 5%;
+	}
+	
+	img.btn_first_trip{
+		width: 20px;
+		height: 20px;
+	}
+	div.select_tourbox > img.tour_image{
+		width: 100%;
+		height: 100%;
+	}
+	
+	span.tour_name{
+		width: 300px;
+		height: 20px;
+		text-align: center;
+	}	
