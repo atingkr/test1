@@ -21,4 +21,9 @@ public class RecommendController {
 		return "Recommend/Test";
 	}
 	
+	@RequestMapping("/divTest.wd")
+	public String divTest(){
+		return "Recommend/DivTest";
+	}
+	
 }

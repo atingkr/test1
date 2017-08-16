@@ -40,7 +40,8 @@
 	}
 	
 	div.select_box_div{
-		margin-left: 15%;
+		position: absolute;		
+		margin-left: 100px;
 		width: 300px;
 		height: 200px;
 	}
@@ -50,36 +51,43 @@
 	}
 	
 	div>ul>li.select_box{
+		position: relative;	
+		left: 0;
+		top: 0;
 		border: 0.5px solid red;
 		width: 300px;
 		height: 180px;								
 	}	
 	
-	div.select_tourbox{		
-		padding: 0;
+	div.select_tourbox{	
+		position: absolute;		
+		left: 0;
+		top: 0;
+		margin: 0px;
 		z-index: 1;
 		background-repeat: no-repeat;
 		width: 100%;
-		height: 100%;			
+		height: 100%;
 	}
 	div>img.select_img{
+		position: relative;
 		padding: 0;
-		left: 0;
-		top: 0;
 		z-index: 2;
 		width: 100%;
 	}	
 	
 	div.div_hover_box{
-		position: relative;
+		position: absolute;
 		left: 0;
 		top: 0;
 		z-index: 3;
 		width: 300px;
-		height: 180px;	
+		height: 180px;
+		float: left;
 	}
 	
 	div.select_blockA{
+		position: relative;
 		padding: 0;
 		z-index: 4;
 		background: gray;
@@ -88,6 +96,7 @@
 		height: 90px;	
 	}
 	div.select_blockB{
+		position: relative;
 		padding: 0;
 		z-index: 5;
 		width: 300px;
@@ -113,4 +122,4 @@
 		width: 300px;
 		height: 20px;
 		text-align: center;
-	}	
+	}

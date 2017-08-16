@@ -13,5 +13,6 @@
 	<body>
 		<a href="recommend.wd">Test</a>
 		<h2><a href="startTest.wd">별연습</a></h2>
+		<h1><a href="divTest.wd">div연습</a></h1>
 	</body>
 </html>

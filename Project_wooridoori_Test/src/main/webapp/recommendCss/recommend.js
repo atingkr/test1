@@ -13,9 +13,10 @@ var configFontAwesome = {
 		$("#list_classification").hide();
 		$("#list_theme").hide();
 		$(".div_hover_box").hide();
+		$(".div_hover_box").slideDown();
 		
 		$(".select_img").hover(function(){		
-			$(".div_hover_box").slideToggle("slow");							
+			$(".div_hover_box").slideUp("slow");			
 		});
 	});
 	

@@ -79,25 +79,25 @@
 		<li id="" class="select_box">			
 			<div class="select_tourbox">
 				<img src="image/Gyeongbokgung Palace.jpg" class="select_img">
-				<div class="div_hover_box">
-					<div class="select_blockA">
-						<span class="first_trip_click" name="first_trip" value="Y">
-							<img src="image/delete.gif" class="btn_first_trip">
-						</span>
-					</div>
-					<div class="select_blockB">				
-						<ul class="select_box_ul">
-							<li><span>여행지 이름</span></li>
-							<li>
-								<div class="rateit"></div>
-							</li>
-							<li>							
-								<span><img src="image/like2.png" style="width: 20px;">추천</span>
-								<span><img src="image/like3.png" style="width: 20px;">즐겨찾기</span>
-							</li>				
-						</ul>
-					</div>
-				</div>				 
+			</div>
+			<div class="div_hover_box">				
+				<div class="select_blockA">
+					<span class="first_trip_click" name="first_trip" value="Y">
+						<img src="image/delete.gif" class="btn_first_trip">
+					</span>
+				</div>
+				<div class="select_blockB">
+					<ul class="select_box_ul">
+						<li><span>여행지 이름</span></li>
+						<li>
+							<div class="rateit"></div>
+						</li>
+						<li>							
+							<span><img src="image/like2.png" style="width: 20px;">추천</span>
+							<span><img src="image/like3.png" style="width: 20px;">즐겨찾기</span>
+						</li>				
+					</ul>
+				</div>								 
 			</div>							
 		</li>
 		<li>
