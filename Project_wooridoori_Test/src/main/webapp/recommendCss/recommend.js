@@ -8,18 +8,17 @@ var configFontAwesome = {
 	    }
 	};
 	WebFont.load(configFontAwesome);
-	$(function(){
-		
+	
+	$(function(){		
 		$("#list_classification").hide();
 		$("#list_theme").hide();
 		$(".div_hover_box").hide();
-		$(".div_hover_box").slideDown();
 		
-		$(".select_img").hover(function(){		
-			$(".div_hover_box").slideUp("slow");			
+		$(".select_box_div").hover(function(){
+			$(".div_hover_box").slideToggle();							
 		});
 	});
-	
+
 	function filter_aera(e){		
 		$(e).click(function(){
 			$("#list_classification").toggle();
