@@ -1,5 +1,8 @@
 package com.wooridoori.controller;
 
+import org.springframework.stereotype.Controller;
+
+@Controller
 public class HomeController {
-//11
+	
 }

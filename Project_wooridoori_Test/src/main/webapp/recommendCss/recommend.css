@@ -127,8 +127,7 @@
 		text-align: center;
 	}
 		
-	span._filter_tag{
-		cursor: pointer;
+	span._filter_tag{	
 		border-radius: 10px;
 		background-color: gray;
 	}
@@ -145,3 +144,8 @@
 		width: 20px;
 	}
 	
+	span.filter_tag_exit{
+		cursor: pointer;
+	}
+	
+	.brightness {-webkit-filter: brightness(250%);filter: brightness(250%);}

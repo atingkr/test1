@@ -35,12 +35,17 @@
 			<value>classpath:com/wooridoori/mybatis/SqlMapConfig.xml</value>
 		</property>
 	</bean>
-	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate" destroy-method="clearCache"> <!--sqlSessionFactory injection  -->
+	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate" destroy-method="clearCache"> 
+	<!--sqlSessionFactory injection  -->
 		<constructor-arg ref="sqlSessionFactory"/>
 	</bean>
 	
-	<mvc:resources mapping="/resources/**" location="/resources/"/>
-	<mvc:resources mapping="/css/**" location="/resources/css/"/>
+	<!-- dao -->
+	<bean id="RecommendDAO" class="com.wooridoori.dao.RecommendDAO">
+		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"></property>
+	</bean>
+	<bean id="PrivateDAO" class="com.wooridoori.dao.PrivateDAO">
+		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"></property>
+	</bean>
 	
-
 </beans>

@@ -64,7 +64,7 @@ var configFontAwesome = {
 					var n = $(this).attr("name");
 					if(v == 'n')
 					{
-						$("#View").append($("<span class='_filter_tag' name='_tag'>#"+n+"</span>"));
+						$("#View").append($("<span class='_filter_tag' name='_tag'>#"+n+"<span class='filter_tag_exit'>x</span></span>"));
 						$(this).append($("<span class='_tag_a'> ◀</span>"));
 						$(this).attr("val","y");
 					}
@@ -78,16 +78,40 @@ var configFontAwesome = {
 			},function(){
 				$(this).find("._tag").remove();
 			});	
+			var re = 0;
 			$(".rateit").click(function(){
-				var re = $(this).rateit('value');
+				re = $(this).rateit('value');				
 				alert(re);
+				$(this).submit(function() {
+					
+				})
 			});
 			
 			$("._cc_img").click(function(){
-				var na = $(this).attr("neme");
-				
+				na = $(this).attr("neme");
+				select_data(na);
 			});
 		});
+		
+		function select_data(na,re){
+			
+			$.ajax({
+				url : "select_data.wd",
+				type : "post",
+				data : {"favorites": na},
+				success : function(data){
+					alert(na+"저장되었습니다");
+				},
+				statusCode:{
+					404:function(){
+						alert("해당 파일이 없어요!!");
+					},
+					500:function(){
+						alert("서버 오류에요");
+					}
+				}
+			});
+		}
 </script>
 </head>
 <body>
@@ -115,8 +139,8 @@ var configFontAwesome = {
 		</c:forEach>
 	</ul>
 </div>
-<form action="">
-<c:forEach var="and" begin="1" end="3">
+<form action="reconmmend_img.wd" method="post">
+<c:forEach var="and" items="" begin="1" end="3">
 <div class="select_box_div">	
 	<div class="select_tourbox">
 		<img src="image/Gyeongbokgung Palace.jpg" class="select_img">
@@ -131,7 +155,7 @@ var configFontAwesome = {
 			<ul class="select_box_ul">
 				<li><span>여행지 이름</span></li>
 				<li>
-					<div class="rateit"></div>
+					<div class="rateit bigstars"></div>
 				</li>
 				<li>							
 					<span class="_cc_img" name="n"><img class="_ccimg" src="image/like2.png" >추천</span>
